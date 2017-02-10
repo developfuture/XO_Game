@@ -14,5 +14,6 @@ public:
 
 void CPlayer::make_a_move()
 {
-    
+    // need add Traces
+	// need add delay
 }
