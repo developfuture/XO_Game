@@ -1,0 +1,1034 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0125)http://www.biosoft-m.ru/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_GNU_C_(gcc)_%D0%B4%D0%BB%D1%8F_Windows_(MinGW) -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru" dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="Content-Style-Type" content="text/css">
+		<meta name="generator" content="MediaWiki 1.15.4">
+		<link rel="stylesheet" type="text/css" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/CategoryTree.css">
+		<link rel="shortcut icon" href="http://www.biosoft-m.ru/favicon.ico">
+		<link rel="search" type="application/opensearchdescription+xml" href="http://www.biosoft-m.ru/w/opensearch_desc.php" title="биософт-м (ru)">
+        <title>Установка GNU C (gcc) для Windows (MinGW) - биософт-м</title>
+<meta name="GOOGLEBOT" content="NOARCHIVE">
+<meta name="ROBOTS" content="NOARCHIVE">
+
+<script async="" src="http://cse.google.com/adsense/search/async-ads.js"></script><script type="text/javascript" async="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/cse.js.загружено"></script><script type="text/javascript" async="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/ga.js.загружено"></script><script language="JavaScript" type="text/javascript">
+<!--
+
+    function ShowHideWiki(id1, id2) {
+        if (id1 != '') expMenuWiki(id1);
+        if (id2 != '') expMenuWiki(id2);
+    }
+
+    function expMenuWiki(id) {
+        var itm = null;
+        if (document.getElementById) {
+        itm = document.getElementById(id);
+        } else if (document.all){
+        itm = document.all[id];
+        } else if (document.layers){
+        itm = document.layers[id];
+        }
+
+    if (!itm) {
+    // do nothing
+    }
+    else if (itm.style) {
+    if (itm.style.display == "none") { itm.style.display = ""; }
+    else { itm.style.display = "none"; }
+    }
+    else { itm.visibility = "show"; }
+}
+
+//-->
+</script>
+        <link rel="stylesheet" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/diff.css" type="text/css">
+		<link rel="stylesheet" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/shared.css" type="text/css" media="screen">
+		<link rel="stylesheet" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/commonPrint.css" type="text/css" media="print">
+		<link rel="stylesheet" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/main.css" type="text/css" media="screen">
+		<!--[if lt IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE50Fixes.css?176436" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 5.5000]><link rel="stylesheet" href="/w/skins/monobook/IE55Fixes.css?176436" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 6]><link rel="stylesheet" href="/w/skins/monobook/IE60Fixes.css?176436" type="text/css" media="screen" /><![endif]-->
+		<!--[if IE 7]><link rel="stylesheet" href="/w/skins/monobook/IE70Fixes.css?176436" type="text/css" media="screen" /><![endif]-->
+        <!--[if lt IE 7]><script type="text/javascript" src="/w/skins/common/IEFixes.js?176436"></script>
+        <meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+        <script type="text/javascript">/*<![CDATA[*/
+		var skin = "monobook";
+		var stylepath = "/w/skins";
+		var wgArticlePath = "/$1";
+		var wgScriptPath = "/w";
+		var wgScript = "/w/index.php";
+		var wgVariantArticlePath = false;
+		var wgActionPaths = {};
+		var wgServer = "http://www.biosoft-m.ru";
+		var wgCanonicalNamespace = "";
+		var wgCanonicalSpecialPageName = false;
+		var wgNamespaceNumber = 0;
+		var wgPageName = "Установка_GNU_C_(gcc)_для_Windows_(MinGW)";
+		var wgTitle = "Установка GNU C (gcc) для Windows (MinGW)";
+		var wgAction = "view";
+		var wgArticleId = "2040";
+		var wgIsArticle = false;
+		var wgUserName = null;
+		var wgUserGroups = null;
+		var wgUserLanguage = "ru";
+		var wgContentLanguage = "ru";
+		var wgBreakFrames = false;
+		var wgCurRevisionId = 3747;
+		var wgVersion = "1.15.4";
+		var wgEnableAPI = true;
+		var wgEnableWriteAPI = true;
+		var wgSeparatorTransformTable = [",	.", " 	,"];
+		var wgDigitTransformTable = ["", ""];
+		var wgMWSuggestTemplate = "http://www.biosoft-m.ru/w/api.php?action=opensearch\x26search={searchTerms}\x26namespace={namespaces}\x26suggest";
+		var wgDBname = "forum55ft";
+		var wgSearchNamespaces = [0, 1, 2, 3];
+		var wgMWSuggestMessages = ["с советами", "без советов"];
+		var wgRestrictionEdit = [];
+		var wgRestrictionMove = [];
+		/*]]>*/</script>
+
+        <script type="text/javascript" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/wikibits.js.загружено"><!-- wikibits js --></script><style type="text/css">@import "/w/skins/monobook/KHTMLFixes.css";</style>
+        <!-- Head Scripts -->
+		<script type="text/javascript" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/CategoryTree.js.загружено"></script>
+			<script type="text/javascript">
+			var categoryTreeCollapseMsg = "свернуть";
+			var categoryTreeExpandMsg = "развернуть";
+			var categoryTreeCollapseBulletMsg = "\x3cimg src=\"/bsmod/_res_/com_arrow_down_tiny.gif\" alt=\"\x26#9660;\" /\x3e";
+			var categoryTreeExpandBulletMsg = "\x3cimg src=\"/bsmod/_res_/com_arrow_right_tiny.gif\" alt=\"\x26#9654;\" /\x3e";
+			var categoryTreeLoadMsg = "загрузить";
+			var categoryTreeLoadingMsg = "загрузка…";
+			var categoryTreeNothingFoundMsg = "Данная категория не содержит подкатегорий.";
+			var categoryTreeNoSubcategoriesMsg = "нет подкатегорий.";
+			var categoryTreeNoParentCategoriesMsg = "нет родительских категорий";
+			var categoryTreeNoPagesMsg = "нет статей и подкатегорий.";
+			var categoryTreeErrorMsg = "Ошибка загрузки данных.";
+			var categoryTreeRetryMsg = "Пожалуйста, подождите и попробуйте ещё раз.";
+			</script>
+		<script type="text/javascript" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/diff.js.загружено"></script>		<script type="text/javascript" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/ajax.js.загружено"></script>
+		<script type="text/javascript" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/mwsuggest.js.загружено"></script>
+<style type="text/css">/*<![CDATA[*/
+.source-cpp li, .source-cpp pre {
+	line-height: normal; 
+}
+/**
+ * GeSHi Dynamically Generated Stylesheet
+ * --------------------------------------
+ * Dynamically generated stylesheet for cpp
+ * CSS class: source-cpp, CSS id: 
+ * GeSHi (C) 2004 - 2007 Nigel McNie, 2007 - 2008 Benny Baumann
+ * (http://qbnz.com/highlighter/ and http://geshi.org/)
+ * --------------------------------------
+ */
+.cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+.cpp.source-cpp  {font-family:monospace;}
+.cpp.source-cpp .imp {font-weight: bold; color: red;}
+.cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+.cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+.cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+.cpp.source-cpp .kw1 {color: #0000ff;}
+.cpp.source-cpp .kw2 {color: #0000ff;}
+.cpp.source-cpp .kw3 {color: #0000dd;}
+.cpp.source-cpp .kw4 {color: #0000ff;}
+.cpp.source-cpp .co1 {color: #008800;}
+.cpp.source-cpp .co2 {color: #00aa00;}
+.cpp.source-cpp .coMULTI {color: #009900; font-style: italic;}
+.cpp.source-cpp .es0 {color: #000099; font-weight: bold;}
+.cpp.source-cpp .es1 {color: #000099; font-weight: bold;}
+.cpp.source-cpp .es2 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es3 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es4 {color: #660099; font-weight: bold;}
+.cpp.source-cpp .es5 {color: #006699; font-weight: bold;}
+.cpp.source-cpp .br0 {color: #008000;}
+.cpp.source-cpp .sy0 {color: #008000;}
+.cpp.source-cpp .sy1 {color: #000080;}
+.cpp.source-cpp .sy2 {color: #000040;}
+.cpp.source-cpp .sy3 {color: #000040;}
+.cpp.source-cpp .sy4 {color: #008080;}
+.cpp.source-cpp .st0 {color: #a04000;}
+.cpp.source-cpp .nu0 {color: #0000dd;}
+.cpp.source-cpp .nu6 {color: #208080;}
+.cpp.source-cpp .nu8 {color: #208080;}
+.cpp.source-cpp .nu12 {color: #208080;}
+.cpp.source-cpp .nu16 {color:#800080;}
+.cpp.source-cpp .nu17 {color:#800080;}
+.cpp.source-cpp .nu18 {color:#800080;}
+.cpp.source-cpp .nu19 {color:#800080;}
+.cpp.source-cpp .me1 {color: #007788;}
+.cpp.source-cpp .me2 {color: #007788;}
+.cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+.cpp.source-cpp span.xtra { display:block; }
+
+/*]]>*/
+</style>		<link rel="alternate" type="application/rdf+xml" title="Установка GNU C (gcc) для Windows (MinGW)" href="http://www.biosoft-m.ru/w/index.php?title=Special:ExportRDF/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_GNU_C_(gcc)_%D0%B4%D0%BB%D1%8F_Windows_(MinGW)&amp;xmlmime=rdf">
+            <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-38032559-1']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+
+            </script>
+
+	<script src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/jquery-1.9.1.min.js.загружено" type="text/javascript" charset="utf-8"></script>
+	
+	<script src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/jquery-ui-1.10.1.custom.min.js.загружено" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/jquery-ui-1.10.1.custom.css" type="text/css" media="screen" title="no title" charset="utf-8">
+
+    <script src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/jsapi" type="text/javascript"></script><link type="text/css" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/default+ru.css" rel="stylesheet"><link type="text/css" href="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/default.css" rel="stylesheet"><script type="text/javascript" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/default+ru.I.js.загружено"></script><style type="text/css">
+</style><style type="text/css">.gscb_a{display:inline-block;font:27px/13px arial,sans-serif}.gsst_a .gscb_a{color:#a1b9ed;cursor:pointer}.gsst_a:hover .gscb_a,.gsst_a:focus .gscb_a{color:#36c}.gsst_a{display:inline-block}.gsst_a{cursor:pointer;padding:0 4px}.gsst_a:hover{text-decoration:none!important}.gsst_b{font-size:16px;padding:0 2px;position:relative;user-select:none;-webkit-user-select:none;white-space:nowrap}.gsst_e{opacity:0.55;}.gsst_a:hover .gsst_e,.gsst_a:focus .gsst_e{opacity:0.72;}.gsst_a:active .gsst_e{opacity:1;}.gsst_f{background:white;text-align:left}.gsst_g{background-color:white;border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);margin:-1px -3px;padding:0 6px}.gsst_h{background-color:white;height:1px;margin-bottom:-1px;position:relative;top:-1px}.gsib_a{width:100%;padding:4px 6px 0}.gsib_a,.gsib_b{vertical-align:top}.gssb_c{border:0;position:absolute;z-index:989}.gssb_e{border:1px solid #ccc;border-top-color:#d9d9d9;box-shadow:0 2px 4px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 4px rgba(0,0,0,0.2);cursor:default}.gssb_f{visibility:hidden;white-space:nowrap}.gssb_k{border:0;display:block;position:absolute;top:0;z-index:988}.gsdd_a{border:none!important}.gsq_a{padding:0}.gscsep_a{display:none}.gssb_a{padding:0 7px}.gssb_a,.gssb_a td{white-space:nowrap;overflow:hidden;line-height:22px}#gssb_b{font-size:11px;color:#36c;text-decoration:none}#gssb_b:hover{font-size:11px;color:#36c;text-decoration:underline}.gssb_g{text-align:center;padding:8px 0 7px;position:relative}.gssb_h{font-size:15px;height:28px;margin:0.2em;-webkit-appearance:button}.gssb_i{background:#eee}.gss_ifl{visibility:hidden;padding-left:5px}.gssb_i .gss_ifl{visibility:visible}a.gssb_j{font-size:13px;color:#36c;text-decoration:none;line-height:100%}a.gssb_j:hover{text-decoration:underline}.gssb_l{height:1px;background-color:#e5e5e5}.gssb_m{color:#000;background:#fff}.gsfe_a{border:1px solid #b9b9b9;border-top-color:#a0a0a0;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.1);}.gsfe_b{border:1px solid #4d90fe;outline:none;box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-moz-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);-webkit-box-shadow:inset 0px 1px 2px rgba(0,0,0,0.3);}.gssb_a{padding:0 9px}.gsib_a{padding-right:8px;padding-left:8px}.gsst_a{padding-top:3px}.gssb_e{border:0}.gssb_l{margin:5px 0}.gssb_c .gsc-completion-container{position:static}.gssb_c{z-index:5000}.gsc-completion-container table{background:transparent;font-size:inherit;font-family:inherit}.gssb_c > tbody > tr,.gssb_c > tbody > tr > td,.gssb_d,.gssb_d > tbody > tr,.gssb_d > tbody > tr > td,.gssb_e,.gssb_e > tbody > tr,.gssb_e > tbody > tr > td{padding:0;margin:0;border:0}.gssb_a table,.gssb_a table tr,.gssb_a table tr td{padding:0;margin:0;border:0}</style></head>
+<body class="mediawiki ltr ns-0 ns-subject page-Установка_GNU_C_gcc_для_Windows_MinGW skin-monobook">
+    <div id="globalWrapper">
+
+
+    <div style="padding-top: 6px" ,="" id="SiteTop">
+        <table width="100%">
+            <tbody><tr valign="top">
+                <td>
+                    <a href="http://www.biosoft-m.ru/">
+                        <img src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/bsm.png">
+                    </a>
+                </td>
+                <td width="100%" nowrap="">
+
+                    <div style="margin-top: -1px">
+                    <div class="portlet">
+<div class="pBodyTop">
+<p>&nbsp; &nbsp; &nbsp; &nbsp;
+<a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F" title="Category:Продукция">Разработки</a> &nbsp;&nbsp; <span style="display: inline-block; border-right: 1px solid #e0e0e0;">&nbsp;</span>&nbsp; &nbsp;&nbsp;
+<a href="http://www.biosoft-m.ru/%D0%A1%D0%BE%D1%82%D1%80%D1%83%D0%B4%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE" title="Сотрудничество">Услуги</a> &nbsp;&nbsp; <span style="display: inline-block; border-right: 1px solid #e0e0e0;">&nbsp;</span>&nbsp; &nbsp;&nbsp;
+<a href="http://www.biosoft-m.ru/Category:%D0%91%D0%98%D0%9E%D0%A1%D0%9E%D0%A4%D0%A2-%D0%9C" title="Category:БИОСОФТ-М">О&nbsp;компании</a> &nbsp;&nbsp; <span style="display: inline-block; border-right: 1px solid #e0e0e0;">&nbsp;</span>&nbsp; &nbsp;&nbsp;
+<a href="http://www.biosoft-m.ru/%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B" title="Контакты">Контакты</a> &nbsp;
+</p>
+</div>
+</div>
+                    </div>
+
+                </td>
+                <td align="left" style="width: 213px; text-align: left" width="10%" nowrap="">
+
+                        
+
+                </td>
+                <td align="left" style="width: 313px; text-align: left" nowrap="">
+                        
+            <div style="
+                position: relative;
+                width: 150px;
+            ">
+                <script>
+                (function() {
+                  var cx = '011395883383100494635:ixg7rbuzsg4';
+                  var gcse = document.createElement('script'); gcse.type = 'text/javascript';
+                  gcse.async = true;
+                  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                      '//www.google.com/cse/cse.js?cx=' + cx;
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(gcse, s);
+                })();
+                </script>
+                <div id="___gcse_0"><div class="gsc-control-cse gsc-control-cse-ru"><div class="gsc-control-wrapper-cse" dir="ltr"><form class="gsc-search-box gsc-search-box-tools" accept-charset="utf-8"><table cellspacing="0" cellpadding="0" class="gsc-search-box"><tbody><tr><td class="gsc-input"><div class="gsc-input-box" id="gsc-iw-id1"><table cellspacing="0" cellpadding="0" id="gs_id50" class="gstl_50 " style="width: 100%; padding: 0px;"><tbody><tr><td id="gs_tti50" class="gsib_a"><input autocomplete="off" type="text" size="10" class="gsc-input" name="search" title="поиск" id="gsc-i-id1" dir="ltr" spellcheck="false" style="width: 100%; padding: 0px; border: none; margin: 0px; height: auto; outline: none; background: url(&quot;http://www.google.com/cse/static/ru/google_custom_search_watermark.gif&quot;) left center no-repeat rgb(255, 255, 255);"></td><td class="gsib_b"><div class="gsst_b" id="gs_st50" dir="ltr"><a class="gsst_a" href="javascript:void(0)" style="display: none;"><span class="gscb_a" id="gs_cb50">×</span></a></div></td></tr></tbody></table></div><input type="hidden" name="bgresponse" id="bgresponse"></td><td class="gsc-search-button"><input type="image" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/search_box_icon.png" class="gsc-search-button gsc-search-button-v2" title="поиск"></td><td class="gsc-clear-button"><div class="gsc-clear-button" title="удалить результаты">&nbsp;</div></td></tr></tbody></table><table cellspacing="0" cellpadding="0" class="gsc-branding"><tbody><tr><td class="gsc-branding-user-defined"></td><td class="gsc-branding-text"><div class="gsc-branding-text">технология</div></td><td class="gsc-branding-img"><img src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/small-logo.png" class="gsc-branding-img"></td></tr></tbody></table></form><div class="gsc-results-wrapper-overlay"><div class="gsc-results-close-btn" tabindex="0"></div><div class="gsc-tabsAreaInvisible"><div class="gsc-tabHeader gsc-inline-block gsc-tabhActive">Пользовательский поиск</div><span class="gs-spacer"> </span></div><div class="gsc-tabsAreaInvisible"></div><div class="gsc-above-wrapper-area-invisible"><table cellspacing="0" cellpadding="0" class="gsc-above-wrapper-area-container"><tbody><tr><td class="gsc-result-info-container"><div class="gsc-result-info-invisible"></div></td><td class="gsc-orderby-container"><div class="gsc-orderby-invisible"><div class="gsc-orderby-label gsc-inline-block">Упорядочить:</div><div class="gsc-option-menu-container gsc-inline-block"><div class="gsc-selected-option-container gsc-inline-block"><div class="gsc-selected-option">Relevance</div><div class="gsc-option-selector"></div></div><div class="gsc-option-menu-invisible"><div class="gsc-option-menu-item gsc-option-menu-item-highlighted"><div class="gsc-option">Relevance</div></div><div class="gsc-option-menu-item"><div class="gsc-option">Date</div></div></div></div></div></td></tr></tbody></table></div><div class="gsc-adBlockInvisible"></div><div class="gsc-wrapper"><div class="gsc-adBlockInvisible"></div><div class="gsc-resultsbox-invisible"><div class="gsc-resultsRoot gsc-tabData gsc-tabdActive"><table cellspacing="0" cellpadding="0" class="gsc-resultsHeader"><tbody><tr><td class="gsc-twiddleRegionCell"><div class="gsc-twiddle"><div class="gsc-title">Интернет</div></div><div class="gsc-stats"></div><div class="gsc-results-selector gsc-all-results-active"><div class="gsc-result-selector gsc-one-result" title="показать один результат">&nbsp;</div><div class="gsc-result-selector gsc-more-results" title="показать другие результаты">&nbsp;</div><div class="gsc-result-selector gsc-all-results" title="показать все результаты">&nbsp;</div></div></td><td class="gsc-configLabelCell"></td></tr></tbody></table><div><div class="gsc-expansionArea"></div></div></div></div></div></div><div class="gsc-modal-background-image" tabindex="0"></div></div></div></div>
+            </div>
+    
+
+<style>
+/* Slight reset to make the preview have ample padding. */
+
+.cse .gsc-control-cse, .gsc-control-cse
+{
+padding:0px;
+margin:0px;
+}
+
+input.gsc-input
+{
+border:1px solid #609070;
+padding:0px;
+margin:0px;
+margin-right: 0;
+font-size: 12px;
+}
+
+input.gsc-search-button
+{
+padding: 7px 15px 7px 15px;
+margin: 0px 0px 0px 0px;
+background:#609070;
+color:white;
+font-weight:bold;
+border:0px solid #3070c9;
+background-image: none;
+-webkit-border-radius:2px;
+-moz-border-radius:2px;
+border-radius:2px;
+cursor:pointer;
+}
+</style>
+
+                </td>
+            </tr>
+        </tbody></table>
+    </div>
+
+<div id="RightSidebar"><div style="text-align: right; padding-right: 10px"><a href="http://www.biosoft-m.ru/en">EN</a></div><div id="catlinks" class="catlinks"><div id="mw-normal-catlinks"><a href="http://www.biosoft-m.ru/Category:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Category:Категории" style="text-decoration: none;"></a> <span dir="ltr"><a href="http://www.biosoft-m.ru/Category:GCC" title="Category:GCC">GCC</a></span> | <span dir="ltr"><a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC" title="Category:Программистам">Программистам</a></span></div></div><div id="ContextBoxes"><div class="ContextBoxBorder">
+<div class="ContextBoxCaption">
+<p><a href="http://www.biosoft-m.ru/Category:GCC" title="Category:GCC">GCC</a>
+</p>
+</div><div class="ContextBoxContent">
+<p>GNU Win32 C++ MinGW
+</p>
+<ul><li> <strong class="selflink">Установка</strong>
+</li><li> <a href="http://www.biosoft-m.ru/%D0%90%D0%B4%D0%B0%D0%BF%D1%82%D0%B0%D1%86%D0%B8%D1%8F_%D0%BA_GCC_%D0%BF%D0%BE%D1%81%D0%BB%D0%B5_MSVC" title="Адаптация к GCC после MSVC">Адаптация</a>
+<ul><li> <a href="http://www.biosoft-m.ru/%D0%9A%D0%B0%D0%BA_%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B5%D0%BD%D0%B8%D1%8F_%D0%BE%D0%B1_%D0%BE%D1%88%D0%B8%D0%B1%D0%BA%D0%B0%D1%85_MinGW_%D0%BF%D0%B5%D1%80%D0%B5%D0%B1%D0%B8%D1%80%D0%B0%D1%82%D1%8C_%D0%B2_Visual_Studio" title="Как сообщения об ошибках MinGW перебирать в Visual Studio">Формат ошибок</a>
+</li><li> <a href="http://www.biosoft-m.ru/%D0%A0%D0%B5%D0%B0%D0%BB%D0%B8%D0%B7%D1%83%D0%B5%D0%BC_%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%B2%D0%BE%D0%B5_%D1%81%D0%BB%D0%BE%D0%B2%D0%BE_%D0%B4%D0%BB%D1%8F_%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D0%BE%D0%B3%D0%BE_super-%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0_%D0%B2_GCC" title="Реализуем ключевое слово для базового super-класса в GCC">__super</a>
+</li></ul>
+</li></ul>
+<div class="ContextBoxBorder">
+<p><br>
+</p>
+<div class="ContextBoxCaption">
+<p><a href="http://www.biosoft-m.ru/Category:%D0%A1%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8" title="Category:Средства разработки">Средства разработки</a>
+</p>
+</div><div class="ContextBoxContent">
+<ul><li> <a href="http://www.biosoft-m.ru/Jam" title="Jam">Jam</a>
+</li><li> <a href="http://www.biosoft-m.ru/GCC" title="GCC">GCC</a>
+</li><li> <a href="http://www.biosoft-m.ru/QT" title="QT">QT</a>
+</li><li> <a href="http://www.biosoft-m.ru/Cx" title="Cx">Cx</a>
+</li><li> <a href="http://www.biosoft-m.ru/Debslot" title="Debslot">Debslot</a>
+</li><li> <a href="http://www.biosoft-m.ru/%D0%9A%D0%BE%D0%BC%D0%BF%D0%B8%D0%BB%D1%8F%D1%86%D0%B8%D1%8F_Sqliteman_(QT_SQLite_Manager)" title="Компиляция Sqliteman (QT SQLite Manager)">Sqlim</a>
+</li></ul>
+<div class="ContextBoxBorder">
+<p><br>
+</p>
+<div class="ContextBoxCaption">
+<p><a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC" title="Category:Программистам">Программистам</a>
+</p>
+</div><div class="ContextBoxContent">
+<ul><li> <a href="http://www.biosoft-m.ru/%D0%A1%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B8" title="Средства разработки">Средства разработки</a>
+</li><li> <a href="http://www.biosoft-m.ru/%D0%91%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA%D0%B8" title="Библиотеки">Библиотеки</a>
+<ul><li> <a href="http://www.biosoft-m.ru/%D0%9F%D0%BE%D0%B4%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5_%D0%BE%D0%BF%D0%B5%D0%BD%D1%81%D0%BE%D1%80%D1%81%D0%BD%D1%8B%D1%85_%D0%B1%D0%B8%D0%B1%D0%BB%D0%B8%D0%BE%D1%82%D0%B5%D0%BA" title="Подключение опенсорсных библиотек">Open Source</a>
+</li></ul>
+</li><li> <a href="http://www.biosoft-m.ru/%D0%9A%D0%B0%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D0%BA%D0%BE%D0%B4%D0%B0" title="Качество кода">Качество кода</a>
+</li><li> <a href="http://www.biosoft-m.ru/%D0%9E%D0%BF%D1%82%D0%B8%D0%BC%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F_%D0%BA%D0%BE%D0%B4%D0%B0" title="Оптимизация кода">Оптимизация кода</a>
+</li></ul>
+<p>
+</p>
+<div class="ContextBoxBorder">
+<p><br>
+</p>
+<div class="ContextBoxCaption">
+<p><a href="http://www.biosoft-m.ru/Category:%D0%9A%D0%B0%D1%82%D0%B5%D0%B3%D0%BE%D1%80%D0%B8%D0%B8" title="Category:Категории">Категории</a>
+</p>
+</div><div class="ContextBoxContent">
+<ul><li> <a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F" title="Category:Продукция">Приложения</a>
+</li><li> <a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8" title="Category:Публикации">Публикации</a>
+</li><li> <a href="http://www.biosoft-m.ru/Category:%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F" title="Category:Руководства пользователя">Руководства</a>
+</li><li> <a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%81%D1%82%D0%B0%D0%BC" title="Category:Программистам">Программистам</a>
+</li><li> <a href="http://www.biosoft-m.ru/Category:%D0%A0%D0%B5%D0%B4%D0%B0%D0%BA%D1%82%D0%BE%D1%80%D0%B0%D0%BC_%D1%81%D1%82%D0%B0%D1%82%D0%B5%D0%B9" title="Category:Редакторам статей">Редакторам</a>
+</li></ul>
+<div class="ContextBoxBorder">
+<p><br>
+</p>
+<div class="ContextBoxCaption">
+<p><a href="http://www.biosoft-m.ru/Category:%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8" title="Category:Новости">Новости</a>
+</p>
+</div><div class="ContextBoxContent">
+<p><span style="color: #406040;"><i>24 декабря 2014</i></span>
+</p><p><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения">Установлен имплантируемый протез левого желудочка сердца (АВК-Н)</a> пациенту НИИ        им. Н.В.Склифосовского.
+</p>
+<center><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения"><img alt="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/100px-ABK-H_-_body.png" width="100" height="62" border="0"></a></center>
+<p><br>
+<span style="color: #406040;"><i>3 декабря 2014</i></span>
+</p><p><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения">Прошёл <b>1 год</b>!!! с даты установки пациенту ОКБ Омска искусственного левого желудочка сердца</a>. Оборудование АВК-Н функционирует в штатном режиме поддерживая работу сердца.
+</p>
+<center><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения"><img alt="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/100px-Комплект_1_АВК-Н.png" width="100" height="60" border="0"></a></center>
+<p><br>
+<span style="color: #406040;"><i>12-15 ноября 2014</i></span>
+</p><p><a href="http://www.biosoft-m.ru/%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0_%D0%B2_%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D0%B8_Dusseldorf_Medica_2014" title="Выставка в Германии Dusseldorf Medica 2014">Выставка в Германии Dusseldorf Medica 2014</a>
+</p>
+<center><a href="http://www.biosoft-m.ru/%D0%92%D1%8B%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0_%D0%B2_%D0%93%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D0%B8%D0%B8_Dusseldorf_Medica_2014" title="Выставка в Германии Dusseldorf Medica 2014"><img alt="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/100px-Лого_MEDICA.png" width="100" height="115" border="0"></a></center>
+<p><br>
+</p><p><span style="color: #406040;"><i>11 ноября 2014</i></span>
+</p><p><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения">Выполнена очередная операция по установке АВК-Н пациенту НИИ имени Н.В. Склифосовского</a>.
+</p>
+<center><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения"><img alt="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/100px-Комплект_АВК-Н.png" width="100" height="67" border="0"></a></center>
+<p><br>
+<span style="color: #406040;"><i>14-16 октября 2014</i></span>
+</p><p>Участие в форуме "Открытые инновации"<a href="http://www.biosoft-m.ru/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D1%84%D1%83%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%B4%D0%BB%D1%8F_%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B4%D0%BE%D0%BD%D0%BE%D1%80%D1%81%D1%82%D0%B2%D0%B0" title="Портативная перфузионная машина для органного донорства">с демонстрацией экспериментального оборудования для экстренного восстановления кровообращения.</a>
+</p>
+<center><a href="http://www.biosoft-m.ru/%D0%9F%D0%BE%D1%80%D1%82%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F_%D0%BF%D0%B5%D1%80%D1%84%D1%83%D0%B7%D0%B8%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F_%D0%BC%D0%B0%D1%88%D0%B8%D0%BD%D0%B0_%D0%B4%D0%BB%D1%8F_%D0%BE%D1%80%D0%B3%D0%B0%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D0%B4%D0%BE%D0%BD%D0%BE%D1%80%D1%81%D1%82%D0%B2%D0%B0" title="Портативная перфузионная машина для органного донорства"><img alt="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/80px-Перфузионный_контур.png" width="80" height="103" border="0"></a></center>
+<p><br>
+<span style="color: #406040;"><i>12 марта 2014</i></span>
+</p><p>В НИИ имени Н.В. Склифосовского 61-летнему пациенту имплантировали созданную с нашим участием систему вспомогательного кровообращения <a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения"> АВК-Н</a>.
+</p>
+<center><a href="http://www.biosoft-m.ru/%D0%9D%D0%BE%D1%81%D0%B8%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%B2%D1%81%D0%BF%D0%BE%D0%BC%D0%BE%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%BE%D0%B3%D0%BE_%D0%BA%D1%80%D0%BE%D0%B2%D0%BE%D0%BE%D0%B1%D1%80%D0%B0%D1%89%D0%B5%D0%BD%D0%B8%D1%8F" title="Носимый аппарат вспомогательного кровообращения"><img alt="" src="./Установка GNU C (gcc) для Windows (MinGW) - биософт-м_files/100px-Комплект_2_АВК-Н.png" width="100" height="75" border="0"></a></center>
+<center><a href="http://www.biosoft-m.ru/Category:%D0%9D%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8" title="Category:Новости">предыдущие новости...</a></center>  
+</div></div>  
+</div></div>  
+</div></div>  
+</div></div>  
+</div></div></div></div>
+        <div id="column-content">
+    <div id="content">
+        <a name="top" id="top"></a>
+        
+        
+
+        
+        <div style="
+                  ">
+                  <script language="JavaScript" type="text/javascript">
+<!--
+function multi_page_jump( url_bit, total_posts, per_page )
+{
+pages = 1; cur_st = parseInt(""); cur_page  = 1;
+if ( total_posts % per_page == 0 ) { pages = total_posts / per_page; }
+ else { pages = Math.ceil( total_posts / per_page ); }
+msg = "Введите номер страницы, к которой хотите перейти." + " " + pages;
+if ( cur_st > 0 ) { cur_page = cur_st / per_page; cur_page = cur_page -1; }
+show_page = 1;
+if ( cur_page < pages )  { show_page = cur_page + 1; }
+if ( cur_page >= pages ) { show_page = cur_page - 1; }
+ else { show_page = cur_page + 1; }
+userPage = prompt( msg, show_page );
+if ( userPage > 0  ) {
+    if ( userPage < 1 )     {    userPage = 1;  }
+    if ( userPage > pages ) { userPage = pages; }
+    if ( userPage == 1 )    {     start = 0;    }
+    else { start = (userPage - 1) * per_page; }
+    window.location = url_bit + "&st=" + start;
+}
+}
+
+function ShowHide(id1, id2) {
+    if (id1 != '') expMenu(id1);
+    if (id2 != '') expMenu(id2);
+}
+
+function expMenu(id) {
+    var itm = null;
+    if (document.getElementById) {
+    itm = document.getElementById(id);
+    } else if (document.all){
+    itm = document.all[id];
+    } else if (document.layers){
+    itm = document.layers[id];
+    }
+
+    if (!itm) {
+    // do nothing
+    }
+    else if (itm.style) {
+    if (itm.style.display == "none") { itm.style.display = ""; }
+    else { itm.style.display = "none"; }
+    }
+    else { itm.visibility = "show"; }
+}
+
+//-->
+</script>
+
+<!--IBF.BANNER-->
+<!-- IE6/Win TABLE FIX -->
+
+<!--NEW-MAIL-NOTE-->
+
+
+
+
+<div style="margin-top: 1px;"><div>    <a href="http://www.biosoft-m.ru/5697" style=" text-decoration: none; ">
+         <h1 id="firstHeading" class="firstHeading" style=" text-decoration: none; ">
+            Установка GNU C (gcc) для Windows (MinGW)
+         </h1>
+    </a></div>            <div class="firstHeading" style="
+                    margin-top: 0;
+                    padding-top: 0;
+                    padding-bottom: 10px;
+                    font-size: 14px; 
+                    font-weight: normal;
+                    margin-left: 70px;
+                    line-height: 1em;
+                    ">
+                Подготовка пакетов для С++ и копирование без инсталляции
+            </div><p class="pp" style="clear: left"></p></div></div>
+        <div id="bodyContent"> <!--
+//VL: border_from_topic gone here --->
+
+            <h3 id="siteSub">Материал из биософт-м</h3>
+            <div id="contentSub"></div>
+                                    <div id="jump-to-nav">Перейти к: <a href="http://www.biosoft-m.ru/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_GNU_C_(gcc)_%D0%B4%D0%BB%D1%8F_Windows_(MinGW)#column-one">навигация</a>, <a href="http://www.biosoft-m.ru/%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_GNU_C_(gcc)_%D0%B4%D0%BB%D1%8F_Windows_(MinGW)#searchInput">поиск</a></div>            <!-- start content //VL: catlinks at top -->
+            
+<p></p>
+<table style="border-spacing:0px; margin:0px 0px; width:100%; border:0px solid #afa3bf; background-color:#fff5e0; margin-bottom: 20px" align="center" cellpadding="5" cellspacing="5">
+
+<tbody><tr>
+<td style="margin:0; background-color:#f0d0a0; font-size:350%; font-weight:bold; border: right 0px solid #afa3bf; text-align:center; color:#faf5ff; padding:0.3em 0.2em; font-family:Times New Roman">&nbsp;&nbsp;!&nbsp;&nbsp;
+</td><td style="width:100%; color:#000; text-align:center;">Данная информация предназначена только только для IT-специалистов по системной интеграции модулей <a href="http://www.biosoft-m.ru/%D0%91%D0%98%D0%9E%D0%A1%D0%9E%D0%A4%D0%A2-%D0%9C" title="БИОСОФТ-М" class="mw-redirect">БИОСОФТ-М</a>. (см. <a href="http://www.biosoft-m.ru/Category:%D0%A0%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%B0_%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F" title="Category:Руководства пользователя">Руководства пользователя</a> к <a href="http://www.biosoft-m.ru/Category:%D0%9F%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%86%D0%B8%D1%8F" title="Category:Продукция">программным продуктам</a>)
+</td></tr>
+</tbody></table>
+<p></p><p>
+Компилятор нужно было приготовить так, чтобы архив просто записать в
+</p>
+<pre>   <b>C:\MyProjects\MinGW</b> (далее должно следовать ..\<b>bin</b>\ и т.д.)
+</pre>
+<p>что бы он работал без всяких глобальных настроек системы. Мобильно, удобно для переноса между компами. Ниже приведена правильная последовательность действий дающая такой результат.
+</p>
+<a name=".D0.92.D1.81.D0.B5_.D0.BB.D0.BE.D0.BA.D0.B0.D0.BB.D1.8C.D0.BD.D0.BE" id=".D0.92.D1.81.D0.B5_.D0.BB.D0.BE.D0.BA.D0.B0.D0.BB.D1.8C.D0.BD.D0.BE"></a><h2> <span class="mw-headline">Все локально</span></h2>
+<p>Базовый MinGW не требует никаких обязательных настроек системы, реестра, путей и т.п., даже если иное вы прочитаете на их сайте.
+</p><p>Я специально отделяю эту инсталляцию от других возможных инсталляций GCC в системе. Она не вызывает конфликта ни с QT ни с SDK для контроллеров.
+</p><p>Они требуют прописывать PATH, я делаю это не системно а локально в компиляционных скриптах. Так мы точно знаем какой компилятор откуда запустился.
+</p><p>Откуда все взялось знать не обязательно.
+</p>
+<a name=".D0.9E.D1.82.D0.BA.D1.83.D0.B4.D0.B0_.D0.B2.D0.B7.D1.8F.D0.BB.D0.BE.D1.81.D1.8C" id=".D0.9E.D1.82.D0.BA.D1.83.D0.B4.D0.B0_.D0.B2.D0.B7.D1.8F.D0.BB.D0.BE.D1.81.D1.8C"></a><h2> <span class="mw-headline">Откуда взялось</span></h2>
+<p>Исходное скачивание проводится на компе с интернетом.
+</p><p>Я не хочу менять никаких системных настроек. Хочу, чтобы компилятор копировался на другие компы и был готов к работе без всяких подготовительных процедур.
+</p><p>Предупреждаю, что эта процедура может привести к скачиванию более новых версий и соответственно к несовместимости с какими то исходниками отлаженными под то что выдано выше.
+</p>
+<a name=".D0.A1.D0.B0.D0.B9.D1.82" id=".D0.A1.D0.B0.D0.B9.D1.82"></a><h3> <span class="mw-headline">Сайт</span></h3>
+<p>Согласно инструкции на <a href="http://www.mingw.org/wiki/InstallationHOWTOforMinGW" class="external free" title="http://www.mingw.org/wiki/InstallationHOWTOforMinGW" rel="nofollow">http://www.mingw.org/wiki/InstallationHOWTOforMinGW</a> скачиваем <b>mingw-get installer</b>.
+</p>
+<a name="mingw-get" id="mingw-get"></a><h3> <span class="mw-headline">mingw-get</span></h3>
+<p>Распаковываем в <b>C:\MinGW</b>.
+</p><p>Запускаем <b>cmd.exe</b> и пишием:
+</p>
+<ul><li> C:&gt;cd C:\MinGW\bin
+</li><li> C:\MinGW\bin&gt;mingw-get.exe update
+</li></ul>
+<p>(далее текущая директория C:\MinGW\bin подразумевается)
+</p>
+<ul><li> mingw-get.exe install mingwrt
+</li><li> mingw-get.exe install w32api
+</li><li> mingw-get.exe install binutils
+</li><li> mingw-get.exe install gcc
+</li><li> mingw-get.exe install g++
+</li><li> mingw-get.exe install mingw32-make
+</li></ul>
+<a name=".D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D1.8F.D0.B5.D0.BC" id=".D0.9F.D1.80.D0.BE.D0.B2.D0.B5.D1.80.D1.8F.D0.B5.D0.BC"></a><h3> <span class="mw-headline">Проверяем</span></h3>
+<ul><li> создаем C:\MinGW\bin\test
+</li><li> создаем C:\MinGW\bin\test\test.cpp
+</li></ul>
+<div class="sourceAny" dir="ltr" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1"><span class="co2">#include "windows.h"</span>
+&nbsp;
+<span class="kw4">int</span> main<span class="br0">(</span><span class="br0">)</span>
+<span class="br0">{</span>
+    MessageBox<span class="br0">(</span><span class="nu0">0</span>, <span class="st0">"Hi "</span> __DATE__ <span class="st0">" "</span> __TIME__, <span class="st0">"MinGW"</span>, <span class="nu0">0</span><span class="br0">)</span><span class="sy4">;</span>
+    <span class="kw1">return</span> <span class="nu0">1</span><span class="sy4">;</span>
+<span class="br0">}</span></pre></div></div>
+<ul><li> создаем C:\MinGW\bin\test\testgcc.bat
+</li></ul>
+<div class="sourceAny" dir="ltr" style="text-align: left;"><div class="cpp source-cpp"><pre class="de1">set PATH<span class="sy1">=</span>C<span class="sy4">:</span>\MinGW\bin<span class="sy4">;</span><span class="sy2">%</span>PATH<span class="sy2">%</span>
+gcc test.<span class="me1">cpp</span>
+pause</pre></div></div>
+<ul><li> запускаем testgcc.bat и получаем:
+</li></ul>
+<pre>C:\MinGW\bin\test&gt;set PATH=C:\MinGW\bin;C:\Program Files\..............
+&nbsp;
+C:\MinGW\bin\test&gt;gcc test.cpp
+&nbsp;
+C:\MinGW\bin\test&gt;pause
+Press any key to continue . . .
+</pre>
+<ul><li> должен появится a.exe, запускаем, убеждаемся что MessageBox() сработал.
+</li></ul>
+<p>По мининимуму больше ничего не нужно. Компиляцию будет организовывать <a href="http://www.biosoft-m.ru/Jam" title="Jam">Jam</a>.
+</p>
+<a name=".D0.9B.D0.B8.D1.86.D0.B5.D0.BD.D0.B7.D0.B8.D1.8F" id=".D0.9B.D0.B8.D1.86.D0.B5.D0.BD.D0.B7.D0.B8.D1.8F"></a><h2> <span class="mw-headline">Лицензия</span></h2>
+<p>Мы не поставляем ни GCC ни MinGW ни как часть наших инсталляций, ни как неотъемлемую часть SDK. Они не являются составляющей частью наших продуктов ни в каком виде. Если какая либо поставка утилит будет включать GCC или MinGW то все связанные с ними исходники требуемые лицензиями и копия лицензии приложены и либо доступны для скачивания с нашего сайта либо входят в поставляемый архив.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 325/1000000
+Post-expand include size: 76635/2097152 bytes
+Template argument size: 24157/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key forum55ft-bddd_:pcache:idhash:2040-0!1!0!!ru!2!edit=0 and timestamp 20170210135621 -->
+<div class="printfooter">
+<div style="text-align: right">www.biosoft-m.ru</div></div><br clear="all"><br>            <!-- end content -->
+            <div>
+ 
+<style type="text/css">
+
+ 
+
+html{overflow-x:auto;}
+
+ 
+
+IPBBODY{font-family:Verdana,Tahoma,Arial,sans-serif;font-size:66%;color:#000;
+margin:0px;padding:0px;
+ 
+background-color:#ffffff;
+ 
+ 
+}
+
+ 
+
+TABLE,TR,TD{color:#000;clear:none;}
+
+p.pp{margin-left:2px;margin-top:2px;margin-bottom:2px;}
+
+ 
+
+#ipbwrapper
+{text-align:left;margin-left:0px;margin-right:0px;
+}
+
+
+ 
+ 
+
+.rootnav
+{
+    font-family:Verdana,Tahoma;
+    font-size:100%;
+    font-weight:bold;
+    color:#2260aa;
+}
+
+.rootnav:link,.rootnav:visited,.rootnav:active{color:#2260aa}
+.rootnav:hover{color:#2280ee}
+
+.subnav{font-size:12px;}
+.subnav:link,.subnav:visited,.subnav:active{color:#68a880}
+.subnav:hover{color:#529060}
+
+
+
+
+fieldset.search{padding:6px;line-height:150%}
+
+label{cursor:pointer;}
+
+form{display:inline;}
+
+img{vertical-align:middle;border:0px}
+
+img.attach{border:2px #EEF2F7;padding:8px;background-color:#f7fafd}
+
+
+
+.googleroot{padding:6px;line-height:130%}
+
+.googlechild{padding:6px;margin-left:30px;line-height:130%}
+
+.googlebottom,.googlebottom a:link,.googlebottom a:visited,.googlebottom a:active{font-size:100%;color:#3A4F6C;}
+
+.googlish,.googlish a:link,.googlish a:visited,.googlish a:active{font-size:127%;font-weight:bold;color:#00D;}
+
+.googlepagelinks{font-size:1.1em;letter-spacing:1px}
+
+.googlesmall,.googlesmall a:link,.googlesmall a:active,.googlesmall a:visited{font-size:91%;color:#434951}
+
+
+
+.caldate{text-align:right;font-weight:bold;font-size:100%;color:#777;
+background-color:#DFE6EF;padding:4px;margin:0px}
+
+.cal_sun{text-align:right;font-weight:bold;font-size:100%;color:#777;
+background-color:#eaE6E5;padding:4px;margin:0px}
+
+
+.logotop{border-style:solid;border-width:0px;border-bottom-width:1px;border-color:#80A6DC;background-color:#F4F8Ff}
+
+#userlinks{border:0px solid #80A6DC;}
+
+.postbuttons{border:1px solid #b2CFeF;background-color:#F4F8Ff;padding:2px}
+
+#navstrip{font-weight:bold;padding:0px 0px 13px 0px;}
+
+
+
+ 
+
+.bsmBoxHeader{background-color:#D0DaEd;color:#3A4F6C;font-weight:bold;padding:7px;margin-top:1px}
+
+.pformleft{background-color:#F5F9FD;padding:6px;margin-top:1px;width:25%;border-top:0px solid #C2CFDF;border-right:0px solid #C2CFDF;}
+
+.pformleftw{background-color:#F5F9FD;padding:6px;margin-top:1px;width:40%;border-top:0px solid #C2CFDF;border-right:0px solid #C2CFDF;}
+
+.pformright{background-color:#F5F9FD;padding:6px;margin-top:1px;border-top:0px solid #C2CFDF;}
+
+.pformrightdk{background-color:#efF3Fe;padding:6px;margin-top:1px;border-top:0px solid #C2CFDF;}
+
+.pforminterlt{background-color:#F5F9FD;padding:6px;margin-top:1px;border-top:0px solid #C2CFDF;
+    border-right:0px solid #C2CFDF;}
+
+.pforminterdk{background-color:#efF3Fe;padding:6px;margin-top:1px;border-top:0px solid #C2CFDF;
+    border-right:0px solid #C2CFDF;}
+
+.pformintertask{background-color:#f9fff5;padding:6px;margin-top:1px;border-top:0px solid #C2CFDF;
+    border-right:0px solid #C2CFDF;}
+
+.taskunk{font-weight:bold;color:#7777b0;}
+
+.topictask{
+    background-color:#f9fbf5;
+    padding-left:7px;padding-right:7px;margin-top:1px;
+    font-size:14px;
+    padding-top:4px;padding-bottom:5px;
+}
+
+.othertopictask{
+    background-color:#F3FaFc;
+}
+
+.taskbr{border:1px solid #c0aa75;background-color:#f9fbf5;}
+.othertaskbr{border-color:#cce0dc;background-color:#F3FaFc;}
+
+ 
+
+.signature{font-size:91%;color:#339;line-height:150%}
+
+.postdetails{font-family:Tahoma;font-size:12px;}
+.weak{color:#307090}
+.bsmSmall{font-size:11px;color:#3070a0}
+.bsmTiny{
+    font-size:10px;
+    line-height:12px;
+    color:#6090e0 
+}
+
+.bsmNormalMono{
+    font-family:"Courier New",Courier,monospace;
+    font-size:18px;
+    line-height:18px;
+    color:#6090e0;
+}
+
+.bsmTinyMono{
+    font-family:"Courier New",Courier,monospace;
+    font-size:11px;
+    line-height:12px;
+    color:#6090e0;
+}
+
+.postcolor{font-size:14px;line-height:160%}
+
+.avatar
+{
+   margin-top:0.5em;
+   margin-left:1.0em;
+   margin-right:1.0em;
+   margin-bottom:0.1em;
+}
+
+ 
+.bigcap{font-weight:bold;color:#105090;font-size:200%;line-height:1.2em;}
+.bigcapsub{font-weight:normal;color:#104070;font-size:100%;}
+
+.normalname{font-weight:bold;color:#000000;line-height:140%}
+
+.normalname a:link,.normalname a:visited,.normalname a:active{font-size:109%;color:#000000}
+
+.unreg{font-size:100%;font-weight:bold;color:#70a000;line-height:140%}
+
+
+
+.post1{background-color:#F3F4F8}
+.post2{background-color:#F3FaFc}
+.postb{background-color:#FcFfFf}
+.quote{background-color:#dae6F6}
+
+.colps{font-size:96%;background-color:#FaFdFf}
+.colps a:link,.colps a:visited,.colps a:active{text-decoration:none}
+
+.colpd{font-size:85%;color:#002222;background-color:#FaFdFf}
+
+.postlinksbar{
+background-color:#c2d3f0;padding:7px;margin-top:0px;font-size:95%;
+ 
+}
+
+
+ 
+
+.bsmRowMain{background-color:#F7FaFF}
+
+.bsmRowSoft{background-color:#f7FaFf;}
+.row4icon{background-color:#efF3Fe;margin-top:0;padding-top:0}
+.row4lt{background-color:#f6F9Ff}
+.bsmRowHeavy{background-color:#E8EfFd;margin-top:0;padding-top:0}
+.bsmRowExtra{background-color:#E0E8Fa}
+.row2icon{background-color:#E8EfFd;padding-top:8px;line-height:100%}
+
+
+.darkrow1{background-color:#dde8f4;color:#4C77ab;}
+
+.darkrow2{background-color:#BCD0ED;color:#3A4F6C;}
+
+.darkrow3{background-color:#D1DCEB;color:#3A4F6C;}
+
+.darkrow4{background-color:#D1DCEB;color:#3A4F6C;}
+
+.darkrow4 a:link,.darkrow4 a:visited,.darkrow4 a:active{text-decoration:none;color:#3A4F6C;font-weight:bold}
+
+.progress1{background-color:#BCD0ED;color:#BCD0ED;font-size:90%}
+.progress2{background-color:#E8EfFd;color:#BCD0ED;font-size:90%}
+.progrback{background-color:#E8EfFd;color:#BCD0ED;}
+
+
+.hlight{background-color:#DFE6EF}
+
+.dlight{background-color:#EEF2F7}
+
+
+
+.titlemedium{font-weight:bold;color:#3A4F6C;padding:6px;margin:0px;padding-bottom:8px;
+background-color:#cedef8;}
+
+.titlemedium  a:link,.titlemedium  a:visited,.titlemedium  a:active{text-decoration:none;color:#204260}
+
+
+
+ 
+
+.bsmBoxTitle
+{
+    font-family:Verdana,Tahoma,Arial;
+    vertical-align:middle;
+    font-weight:bold;
+    color:#FdFeFf;
+    padding:8px 5px 8px 5px;
+    background-color:#83A5D4;
+}
+.bsmBoxTitle a:link,.bsmBoxTitle  a:visited,.bsmBoxTitle  a:active{color:#FdFeFf}
+.bsmBoxTitle a:hover{text-decoration:underline}
+
+.forumref{font-weight:bold;color:#83A5D4;padding:0px 0px 0px 1px;font-size:85%}
+
+.desc{font-size:10px;color:#435571}
+.smaller{font-size:10px;color:#334561}
+.bsmBotPost{font-size:10px;line-height:1.1em;color:#133a61;}
+
+.edit{font-family:Tahoma;font-size:85%;color:#550000;margin-top:6px;margin-bottom:6px}
+.file{font-family:Tahoma;font-size:85%;color:#003366}
+
+.eventtext{font-weight:normal;font-size:90%;color:#434951;}
+
+.eventtext a:link,.eventtext a:visited,.eventtext a:active{
+font-weight:normal;text-decoration:none;color:#3A4F6C;}
+
+.anone{}
+.anone a:link,.anone a:visited,.anone a:active{underline-color:red;text-decoration:underline;}
+
+
+.searchlite{font-weight:bold;color:#F00;background-color:#FF0}
+
+#QUOTE{font-family:Verdana,Arial;font-size:12px;color:#000000;
+background-color:#f7faff;border:1px solid #88aacc;padding-top:2px;padding-right:2px;padding-bottom:2px;padding-left:2px}
+
+#QUOTEDETAILS{font-family:Verdana,Arial;font-size:14px;color:#000000;
+background-color:#f9fbfc;border:1px solid #b6b0ab;padding-top:2px;padding-right:2px;padding-bottom:2px;padding-left:2px}
+
+#CODE{font-family:"Courier New",Courier,monospace,Verdana,Arial;font-size:14px;
+color:#0a0600;background-color:#fffffe;border:1px solid #adbbcc;padding-top:2px;padding-right:2px;padding-bottom:2px;padding-left:2px;
+white-space:nowrap;}
+
+
+
+.copyright{font-family:Verdana,Tahoma,Arial,Sans-Serif;font-size:9px;
+color:#444488}
+
+
+
+.codebuttons{font-size:100%;font-family:verdana,helvetica,sans-serif;vertical-align:middle;BORDER-RIGHT:#000000 1px solid;BORDER-TOP:#000000 1px solid;BORDER-LEFT:#000000 1px solid;COLOR:#000000;BORDER-BOTTOM:#000000 1px solid;BACKGROUND-COLOR:#efefef}
+
+.forminput,.textinput,.radiobutton,.checkbox{font-size:14px;font-family:verdana,helvetica,sans-serif;vertical-align:middle}
+
+
+
+.thin{padding:6px 0px 6px 0px;line-height:140%;margin:2px 0px 2px 0px;border-top:1px solid #FFF;border-bottom:1px solid #FFF}
+
+
+ 
+
+.plainborder{border:1px solid #345487;background-color:#F5F9FD}
+
+.bsmBoxBorder{
+    border:0px solid #6799da;
+    background-color:#FFF;
+    padding:0;margin:0 
+ 
+    font-size:14px;
+ 
+}
+
+.bsmWikiTopicBorder{border:1px solid #6799da;background-color:#FFF;padding:20;margin:20}
+
+.tablefill{
+    border:0px solid #345487;
+    background-color:#F5F9FD;
+    padding:6px;}
+
+.tablepad{background-color:#F5F9FD;padding:6px}
+
+.tablebasic{width:100%;padding:0px 0px 0px 0px;margin:0px;border:0px}
+
+.postread{width:100%;background-color:#ffffe9;font-size:95%;text-align:right;padding:2px 0px 2px 0px;border-bottom:0px solid #e5ede0}
+
+.postdelta{width:100%;background-color:#fefeff;color:#8aa6c4;font-size:95%;font-weight:bold;text-align:center;border-bottom:0px solid #c9d0f0;}
+
+
+.purple{color:purple;font-weight:bold}
+
+.red{color:red;font-weight:bold}
+
+.green{color:green;font-weight:bold}
+
+.blue{color:blue;font-weight:bold}
+
+.orange{color:#F90;font-weight:bold}
+
+.bluetext,.bluetext:link{color:#011099}
+
+.editedby{color:#205060;background-color:#efefff}
+
+.smallref,.smallref a:link,.smallref a:visited,.smallref a:active{font-size:100%;color:#4E6589;}
+
+#containerul,#containerul ul{
+  text-align:left;
+  margin:0;
+  padding:0;
+}
+
+#containerul li{
+  margin:0 0 0 30px   
+  padding:0;
+  list-style-type:none;
+}
+
+#containerul .symbols{
+  float:left;
+  width:12px;
+  height:1em;
+  background-position:0 50%;
+  background-repeat:no-repeat;
+}
+
+
+</style> 
+ 
+ 
+
+<div style="
+    line-height: 1.2em;
+    ">
+
+ 
+
+  <div id="ipbwrapper">
+    <p class="pp">
+     
+    </p><p class="pp">
+    <script language="javascript" type="text/javascript">
+    <!--
+
+    function delete_post(theURL) {
+       if (confirm('Вы действительно хотите УДАЛИТЬ это сообщение?')) {
+          window.location.href=theURL;
+       }
+       else {
+          alert ('Не хотите, как хотите :)');
+       }
+    }
+
+    function x2_post(theURL) {
+       if (confirm('Вы действительно хотите РАЗДВОИТЬ это сообщение?')) {
+          window.location.href=theURL;
+       }
+       else {
+          alert ('Не хотите, как хотите :)');
+       }
+    }
+
+    function PopUp(url, name, width,height,center,resize,scroll,posleft,postop) {
+    if (posleft != 0) { x = posleft }
+    if (postop  != 0) { y = postop  }
+    if (!scroll) { scroll = 1 }
+    if (!resize) { resize = 1 }
+    if ((parseInt (navigator.appVersion) >= 4 ) && (center)) {
+      X = (screen.width  - width ) / 2;
+      Y = (screen.height - height) / 2;
+    }
+    if (scroll != 0) { scroll = 1 }
+    var Win = window.open( url, name, 'width='+width+',height='+height+',top='+Y+',left='+X+',resizable='+resize+',scrollbars='+scroll+',location=no,directories=no,status=no,menubar=no,toolbar=no');
+	}
+
+    //-->
+    </script>
+
+<a name="top"></a>
+<!--IBF.FORUM_RULES-->
+ 
+    <br clear="all"> 
+    </p><div style="border:0px solid #6799da;"> </div>
+    
+     
+  </div>
+
+
+
+
+</div>
+</div>            <div class="visualClear"></div>
+
+        </div>
+
+    </div>
+
+        </div>
+
+        <div id="column-one" style="position: relative;">
+
+
+    <script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+
+
+<!---- drop all left sidebars DOWN! ----->
+<div style="clear: both;">
+
+
+<!---- drop all left sidebars DOWN! ----->
+</div>
+
+        </div><!-- end of the left (by default at least) column -->
+            <div class="visualClear"></div>
+            <div id="footer">
+            <ul id="f-list">
+                    <li id="about"><a href="javascript:ShowHide(&#39;BottomExtra&#39;,&#39;&#39;);" style="color: #aaccaa;font-size: 14px">© BIOSOFT-M, 2017</a><div id="BottomExtra" style="display: none;"><br clear="all">
+
+<span align="center" class="copyright">Site content (c) BIOSOFT-M<br>Forum module is based on 
+            <a href="http://www.invisionboard.com/" target="_blank">Invision Power Board</a>
+            © <a href="http://www.invisionpower.com/" target="_blank">IPS, Inc.</a>
+            (A902.b, 1486750366, 2017-02-10 21:12:46| ) <font color="red">Tam vhod snizu</font> <br>[ script execution time: 0.6338 ] &nbsp; 
+            [ 33 queries used ]
+            &nbsp;[ 22883K / 23731K ] &nbsp;
+            [ GZIP is disabled globally ] 
+            &nbsp; </span><br><br><font size="1" color="#444477">NULL<br>Raw: 11,361; Filter: 11,361; <br></font><br></div></li>
+            </ul>
+        </div>
+
+    <div class="portlet" id="p-personal">
+        <h5>Личные инструменты</h5>
+        <div class="pBody" style="margin-right: 200px;"> <!--- //sync:_right_width_ --->
+            <ul>
+                <li id="pt-login"><a href="http://www.biosoft-m.ru/w/index.php?title=Special:UserLogin&amp;returnto=%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0_GNU_C_(gcc)_%D0%B4%D0%BB%D1%8F_Windows_(MinGW)" title="Здесь можно зарегистрироваться в системе, но это необязательно. [o]" accesskey="o">L</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+		<script type="text/javascript">if (window.runOnloadHook) runOnloadHook();</script>
+<!-- Served in 0.692 secs. --> <!-- (AID 2040) -->
+<table cellspacing="0" cellpadding="0" class="gstl_50 gssb_c" style="width: 93px; display: none; top: 33px; position: absolute; left: 1253px;"><tbody><tr><td class="gssb_f"></td><td class="gssb_e" style="width: 100%;"></td></tr></tbody></table></body></html>
