@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<package id="manifest-0-033-7070-4a7947">
+    <release tarname="mingwrt-3.22.4-mingw32-lic.tar.xz" />
+    <references>
+        <sysroot id="sysroot-0-002-a7c6-d7dbb5" />
+    </references>
+    <manifest>
+        <dir path="share" />
+        <dir path="share/doc" />
+        <dir path="share/doc/mingwrt" />
+        <dir path="share/doc/mingwrt/3.22.4" />
+        <file path="share/doc/mingwrt/3.22.4/DISCLAIMER" />
+        <file path="share/doc/mingwrt/3.22.4/CYGWIN_LICENSE" />
+        <file path="share/doc/mingwrt/3.22.4/COPYING" />
+    </manifest>
+</package>
