@@ -11,12 +11,13 @@ class CGame
 {
 public:
 
-   CGame( /* IJudgerForGame* Jud, const char fileNameForXOField,   */ );
+   CGame( xo::xofield::CXOfield* field );
    ~CGame();
 
-   void doNextMove();
-
-   //void doNextMove(/* char next_player_simb */xo::xofield::CXOfield* field);
+   void doNextMove(const char playerSimbol) const;
+   void doNextPlayerMove() const;
+   void printField() const;
+   void init( xo::judge::CDjudge* judge );
 
 private:
    char mOunSimbol;
@@ -26,6 +27,7 @@ private:
 
 	xo::player::CPlayer* mpPlayerX;
 	xo::player::CPlayer* mpPlayer0;
+   xo::judge::CJudge*   mpJudge;
 };
 
 

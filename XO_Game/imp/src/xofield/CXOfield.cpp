@@ -56,31 +56,6 @@ CXOfield::CRow CXOfield::operator[](int row)
 
 }
 
-bool CXOfield::isFieldCompleted()
-{
-
-}
-
-// vector<char>& CXOfield::operator[](int row)
-// {
-	// cout<<"CXOfield::operator[]\n";
-
-	// if(row > 0 && row < 3)
-	// {
-	   // cout<<"row = "<<row<<"process "<<row-1<<" row \n";
-	   // return 	fild[row-1];
-
-	// }
-	// else
-	// {
-       // cout<<"\nERROR row = "<<row<<"\n";
-
-	// }
-
-
-// }
-
-
 
 } // namespace xofield
 } // namespace xo

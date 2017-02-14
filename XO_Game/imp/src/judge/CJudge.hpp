@@ -12,18 +12,19 @@ class CJudge
 {
 public:
 
-   CJudge( xo::game::CGame* game, xo::xofield::CXOfield* field );
+   CJudge( xo::game::CGame& game, xo::xofield::CXOfield* field );
    ~CJudge();
 
    void nextMove();
+   void doNextPlayerMove() const;
 
 private:
 
    bool isSomeoneWon() const;
    bool isFieldCompleted() const;
 
-   xo::game::CGame* mpGame;
-   xo::xofield::CXOfield* mpField;
+   xo::game::CGame& mGame;
+   xo::xofield::CXOfield& mpField;
    const char* mpCurrentPlayer;
 
 };

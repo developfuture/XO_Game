@@ -12,8 +12,9 @@ namespace player {
 class CPlayer
 {
 public:
+public:
 
-   CPlayer( xo::game::CGame* game, xo::xofield::CXOfield* field, char symbol /*CGame game, CBrain brain, Name,*/ );
+   CPlayer( xo::game::CGame* game, xo::xofield::CXOfield* field, char symbol );
    ~CPlayer();
 
    void make_a_move();

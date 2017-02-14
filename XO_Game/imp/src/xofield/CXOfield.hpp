@@ -9,7 +9,7 @@ class CXOfield
 {
 public:
 
-    CXOfield(/* CGame* game */);
+    CXOfield();
     ~CXOfield();
 
 	class CRow {
@@ -34,10 +34,7 @@ public:
 			 {}
 
          CXOfield* parent;
-
-
      };
-
 
     void printField();
 
