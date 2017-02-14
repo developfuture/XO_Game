@@ -1,4 +1,4 @@
-#include "windows.h"
+//#include "windows.h"
 /*TODO delete*/ #include <iostream>
 #include <string>
 #include <vector>
@@ -6,7 +6,7 @@
 using namespace std;
 
 // TODO CPlayer.cpp -> CPlayer.hpp
-#include "loger/CLoger.cpp"
+//  #include "loger/CLoger.cpp"
 //#include "screen/CScreen.hpp"
 //#include "xofield/CXOfield.cpp"
 //#include "player/CPlayer.cpp"
@@ -25,7 +25,7 @@ const char* logPrefix = "main";
 
 int main()
 {
-   xo::loger::CLoger PRINT;
+//   xo::loger::CLoger PRINT;
    //xo::screen::CScreen* screen;
    //PRINT.setScreen(screen);
    

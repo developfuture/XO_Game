@@ -5,23 +5,25 @@
 
 namespace xo {
 namespace game {
-	
-	
+
+
 class CGame
 {
 public:
-    
-   CGame( /*CGame game, CBrain brain, Name,*/ );
+
+   CGame( /* IJudgerForGame* Jud, const char fileNameForXOField,   */ );
    ~CGame();
-    
-   //void make_a_move(xo::xofield::CXOfield* field);
- 
+
+   void doNextMove();
+
+   //void doNextMove(/* char next_player_simb */xo::xofield::CXOfield* field);
+
 private:
    char mOunSimbol;
- 
-    xo::xofield::CXOfield* mpField;
-	char nNextPlayer;
-	
+
+   xo::xofield::CXOfield* mpField;
+	char nNextPlayer;  // TODO move to Judger
+
 	xo::player::CPlayer* mpPlayerX;
 	xo::player::CPlayer* mpPlayer0;
 };

@@ -7,22 +7,22 @@ class game::CGame;
 
 namespace xo {
 namespace player {
-	
-	
+
+
 class CPlayer
 {
 public:
-    
+
    CPlayer( xo::game::CGame* game, xo::xofield::CXOfield* field, char symbol /*CGame game, CBrain brain, Name,*/ );
    ~CPlayer();
-    
+
    void make_a_move();
- 
+
 private:
    xo::game::CGame* mpGame;
    char mOunSimbol;
    xo::xofield::CXOfield* mpField;
-   
+
 };
 
 
