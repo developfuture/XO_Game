@@ -47,10 +47,8 @@ void CPlayer::make_a_move()
 
 			if( ( (*mpField)[pos_row][pos_col] != 'X') && ( (*mpField)[pos_row][pos_col] != '0') )
 			{
-				cout<<"position is free\n";
-
-			   (*mpField)[pos_row][pos_col] = mOunSimbol;
-				cout<<"position  "<<pos_row<<":"<<pos_col<<" was set as "<<mOunSimbol<<"\n";
+			   (*mpField)[pos_row][pos_row] = mOunSimbol;
+				cout<<"position "<<pos_row<<" : "<<pos_col<<" was set as "<<mOunSimbol<<"\n";
 
             if(mpGame)
             {

@@ -35,7 +35,7 @@ public:
    void init( xo::judge::CJudge* judge );
    void startGame();
 
-   xo::xofield::CXOfield* getXOField() const; // - for Judge
+   // xo::xofield::CXOfield* getXOField(); - for Judge
 
 private:
    //char mOunSimbol;

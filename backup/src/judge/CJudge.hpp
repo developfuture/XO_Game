@@ -4,6 +4,10 @@
 #include "../xofield/CXOfield.hpp"
 #include "../game/CGame.hpp"
 
+//using std::cout;
+
+//class xo::game::CGame;  // TODO delete?
+
 namespace xo {
 
 namespace game {
@@ -17,7 +21,7 @@ class CJudge
 {
 public:
 
-   CJudge( xo::game::CGame& game );
+   CJudge( xo::game::CGame& game, xo::xofield::CXOfield* field );
    ~CJudge();
 
    // TODO addGame(xo::game::CGame* mGame);

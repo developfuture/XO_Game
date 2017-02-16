@@ -25,7 +25,7 @@ public:
      public:
          char& operator[](int col)
          {
-   			//cout<<"CRow  row= "<<parent->mRow<<" col= "<<col<<"\n";
+   			//cout<<"CRow  row= "<<parent->mRow-1<<" col= "<<col-1<<"\n";
 
    			if(col > 0 && col < 4)
    			{

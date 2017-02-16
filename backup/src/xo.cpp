@@ -39,7 +39,7 @@ int main()
    xo::game::CGame* Game = new CGame(XOField);
 
    // TODO Judge should get XOField from Game
-   xo::judge::CJudge* Judge = new CJudge(*Game );
+   xo::judge::CJudge* Judge = new CJudge(*Game, XOField);
 
    Game->init(Judge);
    Game->startGame();

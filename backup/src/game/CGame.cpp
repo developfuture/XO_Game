@@ -7,7 +7,7 @@ namespace game {
 
 
 CGame::CGame( xo::xofield::CXOfield* field )
-:mpField(field) // TODO should created in constructor
+:mpField(0) // TODO should created in constructor
 //,nNextPlayer('X')
 ,mpPlayerX(0)
 ,mpPlayer0(0)
@@ -16,8 +16,7 @@ CGame::CGame( xo::xofield::CXOfield* field )
 	cout<<"CGame is created\n";
 	// TODO screen->print_msg()
 
-   // TODO create and send to Judge
-	//mpField = new xo::xofield::CXOfield;
+	mpField = new xo::xofield::CXOfield;
 
 	mpPlayerX = new xo::player::CPlayer(this, mpField, 'X');
    mpPlayer0 = new xo::player::CPlayer(this, mpField, '0');
@@ -51,8 +50,6 @@ void CGame::doNextMove(char playerSimbol) const
 {
 	cout<<"CGame::doNextMove() playerSimbol = "<<playerSimbol<<"\n";
 
-	printField();
-
    if(mpPlayerX && mpPlayer0)
    {
 		if(playerSimbol == 'X')
@@ -76,9 +73,7 @@ void CGame::doNextPlayerMove() const
 	cout<<"CGame::doNextPlayerMove()\n";
 
 	printField();
-	cout<<"\n\n\n";
 
-   // TODO chack if game is finished
 	if(mpJudge)
 	{
       mpJudge->doNextPlayerMove();
@@ -90,10 +85,9 @@ void CGame::printField() const
 {
 	cout<<"CGame::printField()\n";
 
-   //cout<<"--> input somthing to continue";
-   //int pause;  cin>>pause;
+   cout<<"--> input somthing to continue";
+   int pause;  cin>>pause;
 
-   //cout<<"\n";
    for(int i=1 ; i<4 ; i++)
    {
     	for(int j=1 ; j<4 ; j++)
@@ -101,17 +95,13 @@ void CGame::printField() const
           cout<<(*mpField)[i][j]<<" ";
     	}
 
-      cout<<"\n";
-   }
    cout<<"\n";
 
-}
+   }
 
 
-xo::xofield::CXOfield* CGame::getXOField() const
-{
-   return mpField;
 }
+
 
 
 } // namespace game
