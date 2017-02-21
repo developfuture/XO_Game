@@ -26,26 +26,30 @@ class CGame
 {
 public:
 
-   CGame( xo::xofield::CXOfield* field );
+   CGame( xo::judge::CJudge judge );
    ~CGame();
 
-   void doNextMove(char playerSimbol) const;
-   void doNextPlayerMove() const;
-   void printField() const;
-   void init( xo::judge::CJudge* judge );
+   void doNextMove() const;
+   void doNextPlayerMove();
+   void init(xo::xofield::CXOfield* field);
    void startGame();
+   int getGameID() const;
+   char getCurrentPlayerSimbol() const;
+   void setCurrentPlayerSimbol(char simb);
 
    xo::xofield::CXOfield* getXOField() const; // - for Judge
 
 private:
    //char mOunSimbol;
+   void printField() const;
 
+   int mGameID;
    xo::xofield::CXOfield* mpField;
-	//char nNextPlayer;  // TODO move to Judger
+	char mCurrentPlayerSimbol;  // TODO move to Judger
 
 	xo::player::CPlayer* mpPlayerX;
 	xo::player::CPlayer* mpPlayer0;
-   xo::judge::CJudge*   mpJudge;
+   xo::judge::CJudge&   mJudge;
 };
 
 

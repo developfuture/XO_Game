@@ -5,15 +5,14 @@
 namespace xo {
 namespace judge {
 
-CJudge::CJudge(xo::game::CGame& game )
-:mGame(game)
-//,mpField(field)
-,mpCurrentPlayer('0') // TODO ,mpCurrentPlayer('X')
-//,mpGames(0)
+CJudge::CJudge()
+:mpCurrentGame(0)
+//,mpCurrentPlayerSimbol('0') // TODO ,mpCurrentPlayer('X')
+,mGames( *( new queue< xo::game::CGame* > ) )
 {
 	cout<<"CJudge is created\n";
 	// TODO screen->print_msg()
-	mpField = mGame.getXOField();
+	//mpField = mpCurrentGame->getXOField();
 }
 
 CJudge::~CJudge()
@@ -36,19 +35,28 @@ bool CJudge::isFieldCompleted() const
 	cout<<"CJudge::isFieldCompleted()\n";
    //Sleep(1000);
 
-          cout<<"(*mpField)[1][1]"<<(*mpField)[1][1]<<"\n";
-   if( ( (*mpField)[1][1] == 'X' || (*mpField)[1][1] == '0' ) &&
-   	 ( (*mpField)[1][2] == 'X' || (*mpField)[1][2] == '0' ) &&
-       ( (*mpField)[1][3] == 'X' || (*mpField)[1][3] == '0' ) &&
-       ( (*mpField)[2][1] == 'X' || (*mpField)[2][1] == '0' ) &&
-       ( (*mpField)[2][2] == 'X' || (*mpField)[2][2] == '0' ) &&
-       ( (*mpField)[2][3] == 'X' || (*mpField)[2][3] == '0' ) &&
-       ( (*mpField)[3][1] == 'X' || (*mpField)[3][1] == '0' ) &&
-       ( (*mpField)[3][2] == 'X' || (*mpField)[3][2] == '0' ) &&
-       ( (*mpField)[3][3] == 'X' || (*mpField)[3][3] == '0' ) )
-   {
-   	cout<<"Field is complited\n";
-   	return true;
+   xo::xofield::CXOfield* mpField = mpCurrentGame->getXOField();
+
+	if(mpField)
+	{
+	          cout<<"(*mpField)[1][1]"<<(*mpField)[1][1]<<"\n";
+	   if( ( (*mpField)[1][1] == 'X' || (*mpField)[1][1] == '0' ) &&
+	   	 ( (*mpField)[1][2] == 'X' || (*mpField)[1][2] == '0' ) &&
+	       ( (*mpField)[1][3] == 'X' || (*mpField)[1][3] == '0' ) &&
+	       ( (*mpField)[2][1] == 'X' || (*mpField)[2][1] == '0' ) &&
+	       ( (*mpField)[2][2] == 'X' || (*mpField)[2][2] == '0' ) &&
+	       ( (*mpField)[2][3] == 'X' || (*mpField)[2][3] == '0' ) &&
+	       ( (*mpField)[3][1] == 'X' || (*mpField)[3][1] == '0' ) &&
+	       ( (*mpField)[3][2] == 'X' || (*mpField)[3][2] == '0' ) &&
+	       ( (*mpField)[3][3] == 'X' || (*mpField)[3][3] == '0' ) )
+	   {
+	   	cout<<"Field is complited\n";
+	   	return true;
+		}
+	}
+	else
+	{
+		cout<<"mpField is NULL";
 	}
 
    return false;
@@ -65,7 +73,7 @@ void CJudge::nextMove()
 
    if(isSomeoneWon())
    {
-      cout<<"Player "<<mpCurrentPlayer<<" WON!!!\n";
+      cout<<"Player "<<mpCurrentGame->getCurrentPlayerSimbol()<<" WON!!!\n";
       return;
    }
 
@@ -76,33 +84,44 @@ void CJudge::nextMove()
 			return;
 	}
 
-	if( mpCurrentPlayer == 'X')
-	{
-	   mpCurrentPlayer = '0';
-	   mGame.doNextMove(mpCurrentPlayer);
-	   // TODO mpCurrentPlayer = '0';
+   if(mpCurrentGame)
+   {
+		if( mpCurrentGame->getCurrentPlayerSimbol() == 'X')
+		{
+			mpCurrentGame->setCurrentPlayerSimbol('0');
+		   mpCurrentGame->doNextMove();
+	   }
+	   else
+		{
+		   mpCurrentGame->setCurrentPlayerSimbol('X');
+		   mpCurrentGame->doNextMove();
+
+		}
    }
    else
-	{
-	   mpCurrentPlayer = 'X';
-	   mGame.doNextMove(mpCurrentPlayer);
-	   // TODO mpCurrentPlayer = 'X';
-	}
+   {
+   	cout<<"mpCurrentGame is NULL";
+   }
 
-   cout<<"Current Player "<<mpCurrentPlayer<<"\n";
+   cout<<"Current Player "<<mpCurrentGame->getCurrentPlayerSimbol()<<"\n";
 
 }
 
 
-void CJudge::doNextPlayerMove() //const
+void CJudge::doNextPlayerMove( xo::game::CGame* game )
 {
+   // TODO if in processing state  - add to queue
+	cout<<"CJudge::doNextPlayerMove()\n";
+   mGames.push(game);
+   mpCurrentGame = mGames.front();
    nextMove();
+
 }
 
 // TODO
-//void CJudge::addGame(xo::game::CGame* mGame)
+//void CJudge::addGame(xo::game::CGame& mGame)
 //{
-   //mGames.push_back(mGame);
+   //mpGames.push_back(mGame);
 //}
 
 } // namespace judge

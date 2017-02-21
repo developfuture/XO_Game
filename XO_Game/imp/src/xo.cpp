@@ -28,21 +28,26 @@ using xo::judge::CJudge;
 
 int main()
 {
-   cout<<"START";
+   cout<<"START\n\n";
    //xo::loger::CLoger PRINT;
    //xo::screen::CScreen* screen;
    //PRINT.setScreen(screen);
    //PRINT("--START PROGRAMM--\n");
 
+   //xo::judge::CJudge* Judge = new CJudge();
+   xo::judge::CJudge Judge; // NOT pointer
 
-   xo::xofield::CXOfield* XOField = new CXOfield;
-   xo::game::CGame* Game = new CGame(XOField);
+   xo::xofield::CXOfield* XOField_1 = new CXOfield;
+   xo::game::CGame* Game_1 = new CGame(Judge);
 
-   // TODO Judge should get XOField from Game
-   xo::judge::CJudge* Judge = new CJudge(*Game );
+   //xo::xofield::CXOfield* XOField_2 = new CXOfield;
+   //xo::game::CGame* Game_2 = new CGame(Judge);
 
-   Game->init(Judge);
-   Game->startGame();
+   Game_1->init(XOField_1);
+   Game_1->startGame();
+
+   //Game_2->init(XOField_2);
+   //Game_2->startGame();
 
 
 

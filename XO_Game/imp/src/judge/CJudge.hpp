@@ -1,8 +1,12 @@
 #ifndef xo_judge_hpp
 #define xo_judge_hpp
 
+#include <queue>
+
 #include "../xofield/CXOfield.hpp"
 #include "../game/CGame.hpp"
+//#include "./CState.hpp"
+
 
 namespace xo {
 
@@ -17,22 +21,25 @@ class CJudge
 {
 public:
 
-   CJudge( xo::game::CGame& game );
+   CJudge();
    ~CJudge();
 
    // TODO addGame(xo::game::CGame* mGame);
    void nextMove();
-   void doNextPlayerMove(); //const
+   void doNextPlayerMove( xo::game::CGame* game );
 
 private:
 
    bool isSomeoneWon() const;
    bool isFieldCompleted() const;
 
-   xo::game::CGame& mGame;
-   xo::xofield::CXOfield* mpField;
-   char mpCurrentPlayer;
-   //vector< xo::game::CGame* > * mpGames;
+   xo::game::CGame* mpCurrentGame;
+   //xo::xofield::CXOfield* mpField;
+   //char mpCurrentPlayerSimbol;
+   //CState* mpCurrntState;
+
+   queue< xo::game::CGame* > & mGames;
+
 };
 
 
